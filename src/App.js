@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import User from "./components/User";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <User name={'Vasya'} age={31} isMarried={false} city={'Kyiv'}/>
+            <User name={'Petya'} age={30} isMarried={true} city={'Rivne'}/>
+            <User name={'Kolya'} age={29} isMarried={true} city={'Lviv'}/>
+            <User name={'Olya'} age={28} isMarried={false} city={'Rivne'}/>
+            <User name={'Max'} age={30} isMarried={true} city={'Lviv'}/>
+            <User name={'Anya'} age={31} isMarried={false} city={'Lviv'}/>
+            <User name={'Oleg'} age={28} isMarried={false} city={'Kyiv'}/>
+            <User name={'Andrey'} age={29} isMarried={true} city={'Lviv'}/>
+            <User name={'Masha'} age={30} isMarried={true} city={'Kyiv'}/>
+            <User name={'Olya'} age={31} isMarried={false} city={'Lviv'}/>
+            <User name={'Max'} age={31} isMarried={true} city={'Rivne'}/>
+
+        </div>
+    );
 }
 
 export default App;
