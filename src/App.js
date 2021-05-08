@@ -15,7 +15,6 @@ function App() {
             <User name={'Masha'} age={30} isMarried={true} city={'Kyiv'}/>
             <User name={'Olya'} age={31} isMarried={false} city={'Lviv'}/>
             <User name={'Max'} age={31} isMarried={true} city={'Rivne'}/>
-
         </div>
     );
 }
