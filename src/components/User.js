@@ -1,10 +1,13 @@
 function User(props) {
+
+    let {name, age, isMarried, city} = props;
+
     return (
         <div>
-            <h2>Name: {props.name}</h2>
-            <p>Age: {props.age}</p>
-            <p>Is Married: {`${props.isMarried}`}</p>
-            <p>City: {props.city}</p>
+            <h2>Name: {name}</h2>
+            <p>Age: {age}</p>
+            <p>Is Married: {isMarried.toString()}</p>
+            <p>City: {city}</p>
         </div>
     );
 }
