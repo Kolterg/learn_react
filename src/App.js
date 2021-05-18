@@ -1,10 +1,11 @@
 import './App.css';
-import useState from 'react';
+import {useState} from 'react';
+import Car from "./Components/Car";
 
 // 1
 // Взяти масиви об'єктів і створити їм компоненти, проітерувати і повиводити їх, повидаляти.
 
-const cars = [
+let carsList = [
     {
         producer: "subaru",
         model: "wrx",
@@ -104,6 +105,7 @@ const cars = [
 // 2
 // Взяти масив юзерів створити кожному кнопку.
 
+/*
 let usersWithAddress = [
     {id: 9, name: 'vasya', age: 31, isMarried: false, address: {city: 'Kyiv', street: 'Gongadze', number: 16}},
     {id: 2, name: 'petya', age: 30, isMarried: true, address: {city: 'Rivne', street: 'Zelena', number: 1}},
@@ -117,19 +119,28 @@ let usersWithAddress = [
     {id: 7, name: 'olya', age: 31, isMarried: false, address: {city: 'Lviv', street: 'Naukova', number: 16}},
     {id: 11, name: 'max', age: 31, isMarried: true, address: {city: 'Rivne', street: 'Ivana Franka', number: 121}}
 ];
+*/
 
 function App() {
 
-    let [cars, setCars] = useState(cars);
+    let [cars, setCars] = useState(carsList);
 
+    const deleteCar = () => {
+        cars.pop();
+        console.log([...cars]);
+        setCars([...cars]);
+    };
 
     return (
         <div>
             {
-                cars.map((value, index) => {
-
-                })
+                carsList.map((value, index) =>
+                    <Car key={index}
+                         {...value}
+                    />
+                )
             }
+            <button onClick={deleteCar}>Delet</button>
         </div>
     );
 }
