@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
+// Через Router Link зробити перемикання між Users і Posts, У кожного юзера і поста має бути кнопка Details.
+
 function App() {
   return (
     <div className="App">
