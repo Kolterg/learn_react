@@ -1,0 +1,13 @@
+.wrap {
+    display: flex;
+}
+
+.usersBox {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.choseUserBox {
+    border: 1px solid white;
+    padding: 10px;
+}

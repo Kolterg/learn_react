@@ -1,0 +1,14 @@
+.wrap {
+    display: flex;
+}
+
+.postsBox {
+    width: inherit;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.chosePostBox {
+    border: 1px solid white;
+    padding: 10px;
+}
